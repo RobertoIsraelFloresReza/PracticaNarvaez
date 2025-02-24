@@ -1,6 +1,5 @@
 package utez.edu.mx.practica.dto;
 
-
 public class EmpresaDTO {
     private String nombre;
     private String direccion;

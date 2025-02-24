@@ -8,7 +8,7 @@ public class Empresa {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private UUID id;
+    private UUID uuid;
 
     @Column(nullable = false)
     private String nombre;
@@ -16,7 +16,6 @@ public class Empresa {
     @Column(nullable = false)
     private String direccion;
 
-    // Constructor vacío obligatorio para JPA
     public Empresa() {}
 
     public Empresa(String nombre, String direccion) {
@@ -24,13 +23,13 @@ public class Empresa {
         this.direccion = direccion;
     }
 
-    // Getters y setters
-    public UUID getId() {
-        return id;
+    // Cambiar getId() a getUuid()
+    public UUID getUuid() {
+        return uuid;
     }
 
-    public void setId(UUID id) {
-        this.id = id;
+    public void setUuid(UUID uuid) {
+        this.uuid = uuid;
     }
 
     public String getNombre() {
